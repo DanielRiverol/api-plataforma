@@ -1,0 +1,73 @@
+<div class="container">
+    <input type="checkbox" id="flip" />
+    <div class="cover">
+        <div class="back">
+            <img class="backImg" src="img/register.jpg" alt="register" />
+            <div class="text">
+                <span class="text1"
+                    >Every new friend is a <br />
+                    new adventure</span
+                >
+                <span class="text2">Let's get connect</span>
+            </div>
+        </div>
+    </div>
+    <form action="/api/v1/auth/signup" method="post">
+        <div class="form-content">
+            
+             <div class="signup-form">
+                <div class="title">Registro</div>
+                <div class="input-boxes">
+                    <div class="input-box">
+                        <i class="bx bxs-user-circle"></i>
+                        <input type="text" id="nombre" name="name" placeholder="Nombre" />
+                    </div>
+                    <div class="input-box">
+                        <i class="bx bxs-user-circle"></i>
+                        <input
+                            type="text"
+                            id="apellido"
+                            placeholder="Apellido"
+                            name="lastname"
+                            required
+                        />
+                    </div>
+                    <div class="input-box">
+                        <i class='bx bx-credit-card-front'></i>
+                        <input
+                            type="text"
+                            id="dni"
+                            name="dni"
+                            placeholder="DNI"
+                        />
+                    </div>
+                    <div class="input-box">
+                        <i class="bx bxs-envelope"></i>
+                        <input
+                            type="email"
+                            id="email-signup"
+                            name="email"
+                            placeholder="Email"
+                        />
+                    </div>
+                    <div class="input-box">
+                        <i class="bx bxs-lock"></i>
+                        <input
+                            type="password"
+                            id="password-signup"
+                            name="password"
+                            placeholder="Contraseña"
+                        />
+                    </div>
+
+                    <div class="button input-box">
+                        <input type="submit" value="Registrar" />
+                    </div>
+                    <div class="text signup-text">
+                        Ya tengo cuenta... <label for="flip"><a href="/api/v1/auth/signin">Ingresar</a></label>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </form>
+</div>

@@ -1,0 +1,64 @@
+<div class="container">
+    <input type="checkbox" id="flip" />
+    <div class="cover">
+        <div class="front">
+            <img src="img/login.jpg" alt="login" />
+            <div class="text">
+                <span class="text1"
+                    >Every new friend is a <br />
+                    new adventure</span
+                >
+                <span class="text2">Let's get connect</span>
+            </div>
+        </div>
+        <div class="back">
+            <img class="backImg" src="img/register.jpg" alt="register" />
+            <div class="text">
+                <span class="text1"
+                    >Every new friend is a <br />
+                    new adventure</span
+                >
+                <span class="text2">Let's get connect</span>
+            </div>
+        </div>
+    </div>
+    <form action="/api/v1/auth/signin" method="post">
+        <div class="form-content">
+            <div class="login-form">
+                <div class="title">Inicio de Sesión</div>
+                <div class="input-boxes">
+                    <div class="input-box">
+                        <i class="bx bxs-envelope"></i>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Email"
+                            required
+                        />
+                    </div>
+                    <div class="input-box">
+                        <i class="bx bxs-lock"></i>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Contraseña"
+                        />
+                    </div>
+                    <div class="text">
+                        <a href="http://">Olvidé mi contraseña</a>
+                    </div>
+                    <div class="button input-box">
+                        <input type="submit" value="Ingresar" />
+                    </div>
+                    <div class="text login-text">
+                        No tengo cuenta...
+                        <label for="flip"><a href="http://localhost:3001/api/v1/auth/signup">Crear cuenta</a></label>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </form>
+</div>

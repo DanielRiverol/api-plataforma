@@ -1,0 +1,22 @@
+### POST -- Registro de nuevo usuario
+POST  http://localhost:3001/api/v1/auth/signup HTTP/1.1
+Content-Type: application/json
+
+{   "name":"Daniel",
+    "lastname":"Riverol",
+    "dni":"18843179",
+    "email":"dannyriverol@gmail.com",
+    "password":"1234",
+    "roles":["admin"], 
+    "status":["Active"]
+    
+}
+### POST -- Inicio de sesión
+POST  http://localhost:3001/api/v1/auth/signin HTTP/1.1
+Content-Type: application/json
+
+{
+    "email":"dannyriverol@gmail.com",
+    "password":"1234"
+    
+}
